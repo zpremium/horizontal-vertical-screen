@@ -1,0 +1,57 @@
+/*****  TEST  
+    
+* { outline: 1px solid orange; } 
+    
+img[alt=""] { outline: 6px dashed orange; }
+img:not([alt]) { outline: 6px dashed red; }  
+
+*****/ 
+ 
+    
+/*****  ESTRUCTURA *****/  
+    
+* { box-sizing: border-box; }
+
+main, iframe { width: 100vw; height: 100vh;}
+
+h1 { margin: 0 auto; 
+    padding: 6vh 0;
+}
+
+/*****  TIPOGRAFIA *****/  
+    
+html {
+    font-size: 10px;
+    font-family: sans-serif;
+    text-align: center;
+     }    
+
+h1 { font-size: 5.4vh;
+    font-weight: bold;
+    writing-mode: vertical-rl; 
+    }
+.girar { font-size: 8vh; font-weight: bold;}
+
+p { font-size: 3vh; }    
+
+
+/*****  ESTETICA *****/  
+
+body { background: black; color: white;}
+ 
+/*****  MEDIA QUERIES *****/  
+
+
+/* Horizontal  */
+@media all  and (orientation: portrait){
+    .horizontal{
+        display:none;
+    }
+}
+
+/* vertical */
+ @media all and (orientation: landscape){
+     .vertical{
+         display:none;
+     }
+ }
